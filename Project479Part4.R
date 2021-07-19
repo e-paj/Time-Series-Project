@@ -1,3 +1,5 @@
+pop <- read.csv(file="C:/Users/andre/Documents/School/Stat 479/Project/Data/USAKpop.csv")
+poptimeseries <- ts(pop,frequency = 12,start=c(2010,1))
 library(TSA)
 library(forecast)
 library(tseries)

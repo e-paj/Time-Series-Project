@@ -22,4 +22,5 @@ This is a final project for a Time Series course. My professor told me I could f
 * My professor told me I could compare the popularity with other music genres like Jpop.
 * Also, I was told to be more precise about how I got my model in the end.
 
-
+## What I am currently doing:
+* Currently working on the Jpop data. Trying to see which model would be suit it.

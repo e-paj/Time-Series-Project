@@ -23,4 +23,4 @@ This is a final project for a Time Series course. My professor told me I could f
 * Also, I was told to be more precise about how I got my model in the end.
 
 ## What I am currently doing:
-* Currently working on the Jpop data. Trying to see which model would be suit it.
+* Currently working on the Jpop data. Trying to see which model would suit it.

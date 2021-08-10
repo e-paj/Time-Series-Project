@@ -73,3 +73,84 @@ lin.model6 <- Arima(lin.resid.score,order=c(2,0,2))
 summary(lin.model4)
 summary(lin.model5)
 summary(lin.model6)
+
+# since model 1 has the lowest AIC and BIC, we will choose this model
+lin.ar1 <- resid(lin.model1)
+
+plot(lin.ar1,type='l')
+acf(lin.ar1,lag.max=30); pacf(lin.ar1,lag.max=30)
+Box.test(lin.ar1,lag=3,fitdf=2, type='Ljung-Box') # this box test show that 
+# my residuals are not independent # either box pierce and ljung box
+plotBoxTest(lin.ar1,df=2)
+
+## De-trend using difference
+score.diff <- diff(J_pop)
+plot(score.diff,type='l')
+abline(h=0,col='gray')
+acf(score.diff) # sharp drop after 1 lag
+pacf(score.diff) # gradual decrease 
+Box.test(score.diff,type='Box-Pierce')
+Box.test(score.diff,type='Ljung-Box') # this is independent
+plotBoxTest(score.diff,df=0)
+ar(score.diff,aic=T)
+
+diff.score <- Arima(J_pop,order=c(0,1,0))
+diff.score1 <- Arima(J_pop,order=c(1,1,0))
+diff.score2 <- Arima(J_pop,order=c(0,1,1))
+diff.score3 <- Arima(J_pop,order=c(1,1,1))
+
+summary(diff.score)
+summary(diff.score1)
+summary(diff.score2)
+summary(diff.score3)
+
+res.score <- resid(diff.score3)
+par(mfrow=c(2,3))
+plot(res.score); abline(h=0,col='gray')
+acf(res.score)
+pacf(res.score)
+Box.test(res.score,lag=4,fitdf=3,type='Box-Pierce')
+Box.test(res.score,lag=4,fitdf=3,type='Ljung-Box')
+plotBoxTest(res.score,df=3)
+par(mfrow=c(2,1))
+plot(forecast(diff.score3,h=50))
+plot(forecast(diff.score3,h=500))
+
+## Try with seasonal models
+sma1 <- Arima(J_pop,order=c(1,1,1),seasonal=list(order=c(1,0,0),period=12))
+sma2 <- Arima(J_pop,order=c(1,1,1),seasonal=list(order=c(0,0,1),period=12))
+sma3 <- Arima(J_pop,order=c(1,1,1),seasonal=list(order=c(1,0,1),period=12))
+
+summary(sma1)
+summary(sma2)
+summary(sma3)
+
+sma1.res <- resid(sma1)
+par(mfrow=c(2,3))
+plot(sma1.res,type='l')
+abline(h=0,col='gray')
+acf(sma1.res)
+pacf(sma1.res)
+Box.test(sma1.res,fitdf=5,lag=6,type='Box-Pierce')
+Box.test(sma1.res,fitdf=5,lag=6,type="Ljung-Box")
+plotBoxTest(sma1.res,df=5)
+par(mfrow=c(2,1))
+plot(forecast(sma1,h=50))
+plot(forecast(sma1,h=500))
+
+##### Auto arima
+score <- auto.arima(J_pop)
+summary(score)
+
+par(mfrow=c(1,1))
+plot(forecast(score,h=50))
+plot(forecast(score,h=500))
+
+res.auto.score <- resid(score)
+par(mfrow=c(2,2))
+plot(res.auto.score)
+abline(h=0,col='gray')
+acf(res.auto.score)
+pacf(res.auto.score)
+Box.test(res.auto.score,lag=5,fitdf=4)
+Box.test(res.auto.score,lag=5,fitdf=4,type='Ljung-Box')

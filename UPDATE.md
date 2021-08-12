@@ -11,3 +11,9 @@ August 11:
 - Now, my job for this is to compare my results for both Kpop and Jpop data.
 - See how the results of each data will compare to the other.
 - Honestly, that kind of analysis is out of scope of the course, so I might have to do some research on how to properly do that.
+
+August 12:
+- I tried something, realized I might have done it wrong. So I have to redo everything tomorrow 🤷‍♂️.
+- Ok, for tomorrow, see how both data have increased or decreased in the last 5 years or so. 
+- Compare also the increase and decrease!!
+- You're nearly done!!! 👍

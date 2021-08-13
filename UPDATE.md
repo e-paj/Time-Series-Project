@@ -3,6 +3,7 @@
 August 13:
 - So I made a report about the comparison in the increase/decrease of search popularity of each terms.
 - I have posted the report under the name *Increase Report*.
+- Also, I have posted the latest codes I have used.
 - It's finally the weekend!! 🙌
 
 August 12:

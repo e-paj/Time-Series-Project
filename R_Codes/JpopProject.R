@@ -206,3 +206,30 @@ ts.plot(J_3, gpars=list(xlab='Jan-Jul 2021',ylab='Value',
                         lty=c(2:3),main='Jpop Model Comparison'))
 legend(5, 40, legend = c('Drift','Actual'),lty=c(2:3),cex=0.8)
 
+#### Comparing J-pop from a year ago.
+J.jun <- (49-30)/30
+J.jun
+J.jul <- (51-35)/35
+J.jul
+J.may <- (62-34)/34
+J.may
+
+#### Comparing K-pop from a year ago.
+K.jun <- (80-100)/100
+K.jun
+K.jul <- (78-75)/75
+K.jul
+K.may <- (70-72)/72
+K.may
+
+##
+comp <- read.csv(file='C:/Users/andre/Documents/School/Stat 479/Project/Data/Comparison.csv')
+comp$Week <- as.Date(as.character(comp$Week))
+
+require(ggplot2)
+comp.plot <- ggplot(comp, aes(Week)) + 
+  geom_line(aes(y = J.pop, colour = "J.pop")) + 
+  geom_line(aes(y = K.pop, colour = "K.pop"))
+
+comp.plot + ggtitle("Kpop vs Jpop from July 2020 to July 2021") + 
+  xlab('Date') + ylab("Value")

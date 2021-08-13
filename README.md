@@ -24,7 +24,7 @@ This is a final project for a Time Series course. My professor told me I could f
 
 ## What I am currently doing:
 * Currently working on the Jpop data. Trying to see which model would suit it. ✔
-* I am noe comparing both data and see how each is doing in the last few years. 
+* I am noe comparing both data and see how each is doing in the last few years. ✔
 
 ## Credits:
 * Miller, Ryan & Schwarz, Harrison & Talke, Ismael. (2017). Forecasting Sports Popularity: Application of Time Series Analysis. Academic Journal of Interdisciplinary Studies. 6. 10.1515/ajis-2017-0009. 

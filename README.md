@@ -28,4 +28,4 @@ This is a final project for a Time Series course. My professor told me I could f
 
 ## Credits:
 * Miller, Ryan & Schwarz, Harrison & Talke, Ismael. (2017). Forecasting Sports Popularity: Application of Time Series Analysis. Academic Journal of Interdisciplinary Studies. 6. 10.1515/ajis-2017-0009. 
-* This paper was used as a guide to write my paper.
+* This paper was used as a guide to write my paper, *Project_Report*.

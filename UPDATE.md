@@ -1,8 +1,8 @@
+
 August 13:
-- 
-
-
-
+- So I made a report about the comparison in the increase/decrease of search popularity of each terms.
+- I have posted the report under the name *Increase Report*.
+- It's finally the weekend!! 🙌
 
 August 12:
 - I tried something, realized I might have done it wrong. So I have to redo everything tomorrow 🤷‍♂️.
@@ -12,6 +12,7 @@ August 12:
 
 August 11:
 - Ok, I finished writing a report for the Jpop data. It is not as comprehensive as the other report I have, but it's good!
+- It is under the name *Jpop Report*.
 - Now, my job for this is to compare my results for both Kpop and Jpop data.
 - See how the results of each data will compare to the other.
 - Honestly, that kind of analysis is out of scope of the course, so I might have to do some research on how to properly do that.

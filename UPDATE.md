@@ -1,3 +1,4 @@
+# Entries to updates I made while I work on this project 😁
 ## Please scroll at the very bottom to see the first update. 
 
 August 13:

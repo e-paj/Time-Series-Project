@@ -1,3 +1,4 @@
+## Please scroll at the very bottom to see the first update. 
 
 August 13:
 - So I made a report about the comparison in the increase/decrease of search popularity of each terms.

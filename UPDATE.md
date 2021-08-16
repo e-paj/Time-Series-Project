@@ -1,6 +1,11 @@
 # Entries to updates I made while I work on this project 😁
 ## Please scroll at the very bottom to see the first update. 
 
+August 16:
+- So, I finished this project.
+- My final report is the one labelled *Increase Report*.
+- I had fun!!
+
 August 13:
 - So I made a report about the comparison in the increase/decrease of search popularity of each terms.
 - I have posted the report under the name *Increase Report*.
